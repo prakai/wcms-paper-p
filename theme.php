@@ -113,7 +113,7 @@ if(isset($_COOKIE['stylesheet'])) {
 						var stylesheet = $('#stylesheet').attr('href').replace(/css\/style\-(.*)/g, 'css/style-blue.css');
 						break;
 				}
-				Cookies.set("stylesheet", c);
+				Cookies.set("stylesheet", c, { expires: 365 });
 				$("#stylesheet").attr({href: stylesheet});
 			}
 			
